@@ -1,19 +1,19 @@
 {
-	"name": "myjs",
-	"version": "0.0.1",
-	"description": "my node js lib",
-	"main": "index.js",
-	"repository": "https://github.com/MateusGabi/MyLib",
-	"author": "Mateus Gabi Moreira <mateusgabimoreira@gmail.com>",
-	"license": "MIT",
-	"private": false,
-	"dependencies": {},
-	"scripts": {
-		"prettier": "prettier --write '{src,__{tests,mocks}__}/**/*.js'",
-		"test": "jest"
-	},
-	"devDependencies": {
-		"jest": "^23.5.0",
-		"prettier": "^1.14.2"
-	}
+    "name": "mylibjs",
+    "version": "0.0.1",
+    "description": "my node js lib",
+    "main": "index.js",
+    "repository": "https://github.com/MateusGabi/MyLib",
+    "author": "Mateus Gabi Moreira <mateusgabimoreira@gmail.com>",
+    "license": "MIT",
+    "private": false,
+    "dependencies": {},
+    "scripts": {
+        "prettier": "prettier --write '{src,__{tests,mocks}__}/**/*.js'",
+        "test": "jest"
+    },
+    "devDependencies": {
+        "jest": "^23.5.0",
+        "prettier": "^1.14.2"
+    }
 }
