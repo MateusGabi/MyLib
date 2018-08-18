@@ -1,6 +1,6 @@
-insertPragma: true
+insertPragma: false
 printWidth: 80
 singleQuote: true
-tabWidth: 4
-trailingComma: "es5"
+tabWidth: 2
+trailingComma: "es2015"
 useTabs: false

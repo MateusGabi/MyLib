@@ -1,12 +1,13 @@
 "use strict";
 
-/** @format */
-
+Object.defineProperty(exports, "__esModule", {
+    value: true
+});
 var log = function log(x) {
-  return function (y) {
-    console.log(x + ": " + y);
-    return y;
-  };
+    return function (y) {
+        console.log(x + ": " + y);
+        return y;
+    };
 };
 
-module.exports = log;
+exports.default = log;

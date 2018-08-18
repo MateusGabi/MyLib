@@ -1,10 +1,11 @@
 "use strict";
 
-/** @format */
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var inArray = function inArray(f) {
   return function (arr) {
     return arr.map(f);
   };
 };
-
-module.exports = inArray;
+exports.default = inArray;

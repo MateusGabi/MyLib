@@ -1,11 +1,12 @@
 "use strict";
 
-/** @format */
-
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var sum = function sum(x) {
   return function (y) {
     return y + x;
   };
 };
 
-module.exports = sum;
+exports.default = sum;

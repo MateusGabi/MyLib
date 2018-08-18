@@ -1,7 +1,7 @@
 'use strict';
 
 Object.defineProperty(exports, "__esModule", {
-  value: true
+    value: true
 });
 
 var _div = require('./div');
@@ -35,11 +35,11 @@ var _sum2 = _interopRequireDefault(_sum);
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 exports.default = {
-  div: _div2.default,
-  inArray: _inArray2.default,
-  log: _log2.default,
-  mul: _mul2.default,
-  pipe: _pipe2.default,
-  sub: _sub2.default,
-  sum: _sum2.default
-}; /** @format */
+    div: _div2.default,
+    inArray: _inArray2.default,
+    log: _log2.default,
+    mul: _mul2.default,
+    pipe: _pipe2.default,
+    sub: _sub2.default,
+    sum: _sum2.default
+};

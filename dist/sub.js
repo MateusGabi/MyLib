@@ -1,10 +1,12 @@
 "use strict";
 
-/** @format */
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
 var sub = function sub(x) {
   return function (y) {
     return y - x;
   };
 };
 
-module.exports = sub;
+exports.default = sub;

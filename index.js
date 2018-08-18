@@ -1,4 +1,4 @@
 /** @format */
 
 const dist = require('./dist/index.js')
-module.exports = dist
+module.exports = dist.default
