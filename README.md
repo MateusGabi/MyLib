@@ -53,6 +53,52 @@ const half = div(2);
 const y = [1, 2, 3, 4, 5].map(half); // [0.5, 1, 1.5, 2, 2.5]
 ```
 
+#### Group By
+
+Agrupa um array de objetos por um atributo. Recebe um nome de um atributo e um array de objetos. Retorna um objeto.
+
+```javascript
+const { groupBy } = require('mylibjs');
+
+const users = [{
+  age: 12,
+  name: 'Alice',
+  gender: 'female'
+}, {
+  age: 11,
+  name: 'Bob',
+  gender: 'male'
+}, {
+  age: 12,
+  name: 'Charles',
+  gender: 'male'
+}, {
+  age: 13,
+  name: 'Diana',
+  gender: 'female'
+}, {
+  age: 13,
+  name: 'Eddard'
+}]
+
+const result = groupBy('gender')(users)
+
+console.log('Result', result)
+// {
+//   female: [
+//     { age: 12, name: 'Alice', gender: 'female' },
+//     { age: 13, name: 'Diana', gender: 'female' }
+//   ],
+//   male: [
+//     { age: 11, name: 'Bob', gender: 'male' },
+//     { age: 12, name: 'Charles', gender: 'male' }
+//   ],
+//   undefined: [
+//     { age: 13, name: 'Eddard' }
+//   ]
+// }
+```
+
 #### Mul
 
 Operação matemática de multiplicação.
