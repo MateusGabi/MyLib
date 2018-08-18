@@ -25,10 +25,10 @@ test('start [1, 2, 3, 4, 5] end [2.5, 4, 5.5, 7, 8.5]', () => {
 
     const pipeResult = pipe(
         start,
-        inArray(div(2)),
-        inArray(mul(3)),
-        inArray(sub(4)),
-        inArray(sum(5))
+        div(2),
+        mul(3),
+        sub(4),
+        sum(5)
     );
 
     expect(pipeResult).toEqual([2.5, 4, 5.5, 7, 8.5]);
