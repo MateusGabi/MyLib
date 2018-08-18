@@ -1,4 +1,4 @@
 /** @format */
-const L = require('./src')
 
-module.exports = L
+const dist = require('./dist/index.js')
+module.exports = dist
