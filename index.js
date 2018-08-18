@@ -1,4 +1,4 @@
 /** @format */
-const L = require('./src');
+const L = require('./src')
 
-module.exports = L;
+module.exports = L

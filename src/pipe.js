@@ -1,17 +1,17 @@
 /** @format */
 
-const inArray = require('./inArray');
+const inArray = require('./inArray')
 
 const pipe = (...functions) => {
-    let variable = functions[0];
-    for (let i = 1; i < functions.length; i++) {
-        if (variable instanceof Array) {
-            variable = inArray(functions[i])(variable);
-        } else {
-            variable = functions[i](variable);
-        }
+  let variable = functions[0]
+  for (let i = 1; i < functions.length; i++) {
+    if (variable instanceof Array) {
+      variable = inArray(functions[i])(variable)
+    } else {
+      variable = functions[i](variable)
     }
-    return variable;
-};
+  }
+  return variable
+}
 
-module.exports = pipe;
+module.exports = pipe

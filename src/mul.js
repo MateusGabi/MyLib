@@ -1,4 +1,4 @@
 /** @format */
-const mul = x => y => y * x;
+const mul = x => y => y * x
 
-module.exports = mul;
+module.exports = mul

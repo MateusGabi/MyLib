@@ -1,5 +1,5 @@
 /** @format */
 
-const sum = x => y => y + x;
+const sum = x => y => y + x
 
-module.exports = sum;
+module.exports = sum

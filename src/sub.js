@@ -1,4 +1,4 @@
 /** @format */
-const sub = x => y => y - x;
+const sub = x => y => y - x
 
-module.exports = sub;
+module.exports = sub
