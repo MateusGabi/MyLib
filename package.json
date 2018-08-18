@@ -9,7 +9,7 @@
     "private": false,
     "dependencies": {},
     "scripts": {
-        "prettier": "prettier --write '{src,__{tests,mocks}__}/**/*.js'",
+        "prettier": "prettier --write '{src,test}/**/*.js'",
         "test": "jest"
     },
     "devDependencies": {

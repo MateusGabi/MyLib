@@ -1,10 +1,5 @@
 /** @format */
-const pipe = require('./pipe');
-const inArray = require('./inArray');
-const div = require('./div');
-const mul = require('./mul');
-const sub = require('./sub');
-const sum = require('./sum');
+const { pipe, div, mul, sub, sum } = require('../src');
 
 test('start at 10 end pipe with 16', () => {
     const start = 10;

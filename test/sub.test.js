@@ -1,6 +1,6 @@
 /** @format */
 
-const sub = require('./sub');
+const { sub } = require('../src');
 
 test('sub 0 - 0 should be equal 0', () => {
     expect(sub(0)(0)).toBe(0);

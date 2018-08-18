@@ -1,6 +1,6 @@
 /** @format */
 
-const mul = require('./mul');
+const { mul } = require('../src');
 
 test('mul 0 * 0 should be equal 0', () => {
     expect(mul(0)(0)).toBe(0);

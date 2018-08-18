@@ -1,9 +1,5 @@
 /** @format */
-const inArray = require('./inArray');
-const div = require('./div');
-const mul = require('./mul');
-const sub = require('./sub');
-const sum = require('./sum');
+const { inArray, div, mul, sub, sum } = require('../src');
 
 const arr = [1, 2, 3, 4];
 
