@@ -1,0 +1,17 @@
+nguage: node_js
+
+node_js: 8
+
+script:
+  - npm install
+  - npm run lint
+  - npm test -- --coverage
+
+cache:
+  directories:
+    - node_modules
+
+notifications:
+    email:
+        recipients:
+            - mateusgabimoreira@gmail.com
