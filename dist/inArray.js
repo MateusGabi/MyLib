@@ -1,8 +1,11 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var _types = require('./../types');
+
 var inArray = function inArray(f) {
   return function (arr) {
     return arr.map(f);

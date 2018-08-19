@@ -1,8 +1,11 @@
-"use strict";
+'use strict';
 
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
+var _types = require('./../types');
+
 var groupBy = function groupBy(attribute) {
   return function (collection) {
     var response = {};
@@ -38,5 +41,4 @@ var groupBy = function groupBy(attribute) {
     return response;
   };
 };
-
 exports.default = groupBy;

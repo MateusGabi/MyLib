@@ -1,38 +1,42 @@
 {
-    "name": "mylibjs",
-    "version": "0.0.1",
-    "description": "my node js lib",
-    "main": "index.js",
-    "repository": "https://github.com/MateusGabi/MyLib",
-    "author": "Mateus Gabi Moreira <mateusgabimoreira@gmail.com>",
-    "license": "MIT",
-    "private": false,
-    "dependencies": {},
-    "scripts": {
-        "build": "babel --presets es2015 -d dist/ lib/",
-        "prettier": "prettier --write '{lib,test}/**/*.js'",
-        "test": "jest",
-        "lint": "eslint index.js lib/**  test/** --ext .js",
-        "start": "nodemon --watch lib --exec npm run build"
-    },
-    "devDependencies": {
-        "babel-cli": "^6.26.0",
-        "babel-jest": "^23.4.2",
-        "babel-preset-env": "^1.7.0",
-        "babel-preset-es2015": "^6.24.1",
-        "eslint": "^5.4.0",
-        "eslint-config-standard": "^11.0.0",
-        "eslint-plugin-import": "^2.14.0",
-        "eslint-plugin-node": "^7.0.1",
-        "eslint-plugin-promise": "^4.0.0",
-        "eslint-plugin-standard": "^3.1.0",
-        "jest": "^23.5.0",
-        "nodemon": "^1.18.3",
-        "prettier": "^1.14.2"
-    },
-    "jest": {
-        "transform": {
-            "^.+\\.js?$": "babel-jest"
-        }
+  "name": "mylibjs",
+  "version": "0.0.1",
+  "description": "my node js lib",
+  "main": "index.js",
+  "repository": "https://github.com/MateusGabi/MyLib",
+  "author": "Mateus Gabi Moreira <mateusgabimoreira@gmail.com>",
+  "license": "MIT",
+  "private": false,
+  "dependencies": {},
+  "scripts": {
+    "build": "babel -d dist/ lib/",
+    "prettier": "prettier --write '{lib,test}/**/*.js'",
+    "test": "jest",
+    "lint": "eslint index.js lib/**  test/** --ext .js",
+    "start": "nodemon --watch lib --exec yarn run build"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-eslint": "^8.2.6",
+    "babel-jest": "^23.4.2",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-flow": "^6.23.0",
+    "eslint": "^5.4.0",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-plugin-flowtype": "^2.50.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^7.0.1",
+    "eslint-plugin-promise": "^4.0.0",
+    "eslint-plugin-standard": "^3.1.0",
+    "flow-bin": "^0.79.1",
+    "jest": "^23.5.0",
+    "nodemon": "^1.18.3",
+    "prettier": "^1.14.2"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.js?$": "babel-jest"
     }
+  }
 }

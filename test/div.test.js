@@ -1,5 +1,3 @@
-/** @format */
-
 const { div } = require('../index')
 
 test('div 0 / 0 should be equal NaN', () => {
