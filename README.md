@@ -1,5 +1,7 @@
 <!-- @format -->
 
+[![Build Status](https://travis-ci.org/MateusGabi/MyLib.svg?branch=master)](https://travis-ci.org/MateusGabi/MyLib)
+
 # Minha Lib
 
 Obrigado por acessar esse repositório. Ele é basicamente um espaço no qual eu escrevo algumas funções em JavaScript de conforme for surgindo as necessidades. Eu sei que existem várias outras bibliotecas enormes e muito melhores, como RamdaJS e Lodash. Mas, você sabe né? Nada é tão bom quanto escrever o nosso próprio código.
@@ -60,30 +62,36 @@ Agrupa um array de objetos por um atributo. Recebe um nome de um atributo e um a
 ```javascript
 const { groupBy } = require('mylibjs');
 
-const users = [{
-  age: 12,
-  name: 'Alice',
-  gender: 'female'
-}, {
-  age: 11,
-  name: 'Bob',
-  gender: 'male'
-}, {
-  age: 12,
-  name: 'Charles',
-  gender: 'male'
-}, {
-  age: 13,
-  name: 'Diana',
-  gender: 'female'
-}, {
-  age: 13,
-  name: 'Eddard'
-}]
+const users = [
+  {
+    age: 12,
+    name: 'Alice',
+    gender: 'female',
+  },
+  {
+    age: 11,
+    name: 'Bob',
+    gender: 'male',
+  },
+  {
+    age: 12,
+    name: 'Charles',
+    gender: 'male',
+  },
+  {
+    age: 13,
+    name: 'Diana',
+    gender: 'female',
+  },
+  {
+    age: 13,
+    name: 'Eddard',
+  },
+];
 
-const result = groupBy('gender')(users)
+const result = groupBy('gender')(users);
 
-console.log('Result', result)
+console.log('Result', result);
 // {
 //   female: [
 //     { age: 12, name: 'Alice', gender: 'female' },
@@ -126,9 +134,9 @@ Essa é a função mais legal. Ela recebe um objeto e um array de funções e ap
 const { pipe, sum, mul } = require('mylibjs');
 
 const val = pipe(
-    10,
-    sum(2), // 12
-    mul(3) // 36
+  10,
+  sum(2), // 12
+  mul(3) // 36
 );
 
 console.log(val); // 36
