@@ -107,6 +107,22 @@ console.log('Result', result);
 // }
 ```
 
+#### Has
+
+Verifica se existe um atributo em um objeto. Recebe um nome de um atributo e um objeto. Retorna `boolean`.
+
+```javascript
+const { has } = require('mylibjs');
+
+has('name')(null); // false
+has('name')({}); // false
+has('name')({ name: undefined }); // false
+has('name')({ name: null }); // false
+has('name')({ name: 'Alice' }); // true
+has('age')({ age: 12 }); // true
+has('age')({ age: 0 }); // true
+```
+
 #### Mul
 
 Operação matemática de multiplicação.
