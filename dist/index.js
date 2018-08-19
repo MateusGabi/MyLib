@@ -12,6 +12,10 @@ var _groupBy = require('./groupBy');
 
 var _groupBy2 = _interopRequireDefault(_groupBy);
 
+var _has = require('./has');
+
+var _has2 = _interopRequireDefault(_has);
+
 var _inArray = require('./inArray');
 
 var _inArray2 = _interopRequireDefault(_inArray);
@@ -41,6 +45,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 exports.default = {
   div: _div2.default,
   groupBy: _groupBy2.default,
+  has: _has2.default,
   inArray: _inArray2.default,
   log: _log2.default,
   mul: _mul2.default,
