@@ -42,6 +42,10 @@ var _sum2 = _interopRequireDefault(_sum);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
+var d = (0, _pipe2.default)(0, (0, _sum2.default)(3), (0, _mul2.default)(2));
+
+console.log(d);
+
 exports.default = {
   div: _div2.default,
   groupBy: _groupBy2.default,
