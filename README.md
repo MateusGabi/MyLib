@@ -36,6 +36,24 @@ const { mul, div } = require('mylibjs');
 
 ### Funções
 
+#### All
+
+Verifica se todos os itens de um `array` se aplicam a uma regra. Recebe uma `função` de verificação e um `array`.
+
+```javascript
+const { all } = require('mylibjs');
+
+const isEven = i => i % 2 !== 0
+const isOdd = i => i % 2 == 0
+
+all(isEven)([0, 1, 2])         // returns false
+all(isOdd)([0, 1, 2])          // returns false
+all(isEven)([1])               // returns true
+all(isOdd)([1])                // returns false
+all(isEven)([1, 3, 5])         // returns true
+all(isOdd)([])                 // returns false
+```
+
 #### Div
 
 Operação matemática de divisão.
