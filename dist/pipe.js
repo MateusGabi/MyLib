@@ -10,7 +10,7 @@ var _inArray2 = _interopRequireDefault(_inArray);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var compose = function compose(acc, act) {
+var compose = function compose(acc, act, index, array) {
   return acc instanceof Array ? (0, _inArray2.default)(act)(acc) : act(acc);
 };
 
