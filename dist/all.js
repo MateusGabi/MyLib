@@ -1,10 +1,10 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
+Object.defineProperty(exports, '__esModule', {
+  value: true,
 });
 var all = function all(rule) {
-  return function (array) {
+  return function(array) {
     // check if all elements in array match with the rule
     // console.log('regra', rule);
     // console.log('arr', array);
@@ -27,7 +27,11 @@ var all = function all(rule) {
     var _iteratorError = undefined;
 
     try {
-      for (var _iterator = r[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
+      for (
+        var _iterator = r[Symbol.iterator](), _step;
+        !(_iteratorNormalCompletion = (_step = _iterator.next()).done);
+        _iteratorNormalCompletion = true
+      ) {
         var a = _step.value;
 
         if (!a) {
