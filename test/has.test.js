@@ -46,21 +46,21 @@ test(`has no attributes 'age' and 'name'`, () => {
 })
 
 test(`has just 'age' but not 'name'`, () => {
-  const v = {age: 10}
+  const v = { age: 10 }
   expect(has(['age', 'name'])(v)).toBe(false)
 })
 
 test(`has both attributes: 'age' and 'name'`, () => {
-  const v = {age: 10, name: 'marcus'}
+  const v = { age: 10, name: 'marcus' }
   expect(has(['age', 'name'])(v)).toBe(true)
 })
 
 test(`has no one attributes`, () => {
-  const v = {age: 10, name: 'marcus'}
-  expect(has([])(v)).toBe(false )
+  const v = { age: 10, name: 'marcus' }
+  expect(has([])(v)).toBe(false)
 })
 
 test(`has no one attributes`, () => {
   const v = {}
-  expect(has([])(v)).toBe(false )
+  expect(has([])(v)).toBe(false)
 })
