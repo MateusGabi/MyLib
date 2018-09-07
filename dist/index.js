@@ -1,7 +1,7 @@
 'use strict';
 
-Object.defineProperty(exports, "__esModule", {
-  value: true
+Object.defineProperty(exports, '__esModule', {
+  value: true,
 });
 
 var _all = require('./all');
@@ -48,7 +48,9 @@ var _sum = require('./sum');
 
 var _sum2 = _interopRequireDefault(_sum);
 
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+function _interopRequireDefault(obj) {
+  return obj && obj.__esModule ? obj : { default: obj };
+}
 
 exports.default = {
   all: _all2.default,
@@ -61,5 +63,5 @@ exports.default = {
   pairs: _pairs2.default,
   pipe: _pipe2.default,
   sub: _sub2.default,
-  sum: _sum2.default
+  sum: _sum2.default,
 };
