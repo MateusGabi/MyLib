@@ -32,6 +32,10 @@ var _mul = require('./mul');
 
 var _mul2 = _interopRequireDefault(_mul);
 
+var _pairs = require('./pairs');
+
+var _pairs2 = _interopRequireDefault(_pairs);
+
 var _pipe = require('./pipe');
 
 var _pipe2 = _interopRequireDefault(_pipe);
@@ -54,6 +58,7 @@ exports.default = {
   inArray: _inArray2.default,
   log: _log2.default,
   mul: _mul2.default,
+  pairs: _pairs2.default,
   pipe: _pipe2.default,
   sub: _sub2.default,
   sum: _sum2.default
