@@ -173,6 +173,17 @@ console.log(_pairs);
 // [['a', 'b'], ['a', 'c'], ['b', 'c']]
 ```
 
+#### Uniq
+
+Recebe um `array` e retorna um novo `array` contendo apenas os valores únicos (sem duplicatas).
+
+```javascript
+const { uniq } = require('mylibjs');
+
+uniq([0, 1, 2, 2, 3])              // [0, 1, 2, 3]
+uniq(['a', 'b', 'ab', 'b', 'cd'])  // ['a', 'b', 'ab', 'cd']
+```
+
 #### Pipe
 
 Essa é a função mais legal. Ela recebe um objeto e um array de funções e aplica as funções nesse objeto de forma sequencial. Funciona semelhante a uma linha de produção de uma fábrica. Retorna um objeto.

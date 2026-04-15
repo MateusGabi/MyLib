@@ -48,6 +48,10 @@ var _sum = require('./sum')
 
 var _sum2 = _interopRequireDefault(_sum)
 
+var _uniq = require('./uniq')
+
+var _uniq2 = _interopRequireDefault(_uniq)
+
 function _interopRequireDefault (obj) {
   return obj && obj.__esModule ? obj : { default: obj }
 }
@@ -63,5 +67,6 @@ exports.default = {
   pairs: _pairs2.default,
   pipe: _pipe2.default,
   sub: _sub2.default,
-  sum: _sum2.default
+  sum: _sum2.default,
+  uniq: _uniq2.default
 }
