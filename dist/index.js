@@ -8,6 +8,10 @@ var _all = require('./all')
 
 var _all2 = _interopRequireDefault(_all)
 
+var _capitalize = require('./capitalize')
+
+var _capitalize2 = _interopRequireDefault(_capitalize)
+
 var _div = require('./div')
 
 var _div2 = _interopRequireDefault(_div)
@@ -54,6 +58,7 @@ function _interopRequireDefault (obj) {
 
 exports.default = {
   all: _all2.default,
+  capitalize: _capitalize2.default,
   div: _div2.default,
   groupBy: _groupBy2.default,
   has: _has2.default,
