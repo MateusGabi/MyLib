@@ -141,6 +141,18 @@ has('age')({ age: 12 }); // true
 has('age')({ age: 0 }); // true
 ```
 
+#### Capitalize
+
+Capitaliza todas as palavras maiores que um tamanho mínimo (5 por padrão) e deixa o restante minúsculo.
+
+```javascript
+const { capitalize } = require('mylibjs');
+
+capitalize('javaScript nodeJS library'); // 'Javascript Nodejs Library'
+capitalize('HELLO WORLD'); // 'hello world'
+capitalize('foo bar baz', 0); // 'Foo Bar Baz'
+```
+
 #### Mul
 
 Operação matemática de multiplicação.
