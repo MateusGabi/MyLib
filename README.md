@@ -160,6 +160,30 @@ const double = mul(2);
 const y = [1, 2, 3, 4, 5].map(double); // [2, 4, 6, 8, 10]
 ```
 
+#### Pairs
+Essa função é muito interessante caso você precise fazer um _this or that_. Basicamente ele recebe um `array` e retorna um novo `array` em que cada posição é um `array` de pares.
+
+```javascript
+const { pairs } = require('mylibjs');
+
+const arr = ['a', 'b', 'c'];
+const _pairs = pairs(arr);
+ 
+console.log(_pairs);
+// [['a', 'b'], ['a', 'c'], ['b', 'c']]
+```
+
+#### Uniq
+
+Recebe um `array` e retorna um novo `array` contendo apenas os valores únicos (sem duplicatas).
+
+```javascript
+const { uniq } = require('mylibjs');
+
+uniq([0, 1, 2, 2, 3])              // [0, 1, 2, 3]
+uniq(['a', 'b', 'ab', 'b', 'cd'])  // ['a', 'b', 'ab', 'cd']
+```
+
 #### Pipe
 
 Essa é a função mais legal. Ela recebe um objeto e um array de funções e aplica as funções nesse objeto de forma sequencial. Funciona semelhante a uma linha de produção de uma fábrica. Retorna um objeto.
